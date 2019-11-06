@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tamas Waliczky</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+        :root{
+            --c:purple;
+            --altura: 70vh;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 16px;
+        }
+         header{
+            width: 100%;
+            display: flex;
+            height: var(--altura);
+            background: var(--c);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        header>div{
+            width: 50%;
+            height: 60vh;
+        }
+        .bloc_esq{
+          background: purple;
+        }
+        .bloc_esq img{
+            object-fit: cover;
+            object-position: top center;
+        }
+        .bloc_dre{
+            background: pink; 
+        }
+        .bloc_dre img{
+            object-fit: cover;
+            object-position: top center;
+        }
+        h1{
+            font-family: 'Abril Fatface', cursive;
+            position: absolute;
+            text-align: center;
+            top: 32vh;
+            font-size: 80px;
+            width: 100%;
+            height: 70vw;
+            color: orange;
+        }
+        h2{
+            padding: 40px 0;
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            font-size: 3vw;
+            width: 100%;
+            color: orange;
+        }
+        article{
+            font-family: 'Jomohari',serif;
+            width: 33.4em;
+            margin: auto;
+        }
+        article>p:first-child{
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+            padding: 8vw 0;
+            color: orange;
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 2px solid orange;
+        }
+        article #cos>p:first-child::first-letter{
+            color: orange;
+            font-family: 'georgia', sans-serif;
+            font-size: 6em;
+            float: left;
+            margin-right: 0.1em;
+            margin-top: -0.2em;
+            margin-bottom: -0.3em; 
+            padding-right: 0.0.8em;
+            padding-bottom: 0.1em;
+        }
+        article #cos{
+            text-align: justify;
+            width: auto;
+            hyphens: auto;
+            padding: 0 3em;
+        }
+        article #cos p {
+            padding: 0 0 1.5em  0;
+        }
+        .circulo, .hexagono{
+            background: orange;
+        }
+        .circulo img, .hexagono img{
+            mix-blend-mode: hard-light;
+        }
+        .circulo, .circulo img{
+            border-radius: 50%;
+        }
+        .circulo{
+            max-width: 20em;
+            float: left;
+            margin-left: -10em;
+            shape-margin: 0.1em;
+            shape-outside: circle(50%)border-box;
+        }
+        .hexagono{
+            clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+        }
+        .hexagono{
+            max-width: 25em;
+            float: right;
+            margin-right: -14em;
+            shape-margin: 1em;
+            shape-outside: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%)border-box;
+        }
+          @media (max-width: 600px){
+            body{
+                font-size: 10px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bloc_esq">
+            <img src="img/hola.jpg">
+        </div>
+        <div class="bloc_dre">
+            <img src="img/ola.jpg">
+        </div>
+        <h1>Tamas Waliczky</h1>
+        <h2><p>New artist media</p></h2>
+    </header>
+    <article>
+        <p> Tamás Waliczky, born in 1959, in Budapest, Hungary, works as a media artist. He started out by creating cartoon films (1968–83), whilst working as a painter, illustrator and photographer. He began working with computers in 1983.[1] He was artist-in-residence at the Zentrum für Kunst und Medientechnologie (ZKM) in 1992, and subsequently a member of the Institute's research staff (1993–1997) before taking up a guest professorship at the HBK Saar, Saarbrücken (1997–2002). IAMAS in Gifu, Japan, chose Waliczky as artist-in-residence for 1998/99. From 2003 until 2005 he was professor at IMG, Fachhochschule Mainz. From 2005 to 2010 he was at HBK Saar, this time as a full-time professor. As of 2010, he is a professor at the School of Creative Media at the City University of Hong Kong. </p>
+    <div id="cos">
+        <p>
+        Tamás Waliczky, born in 1959, in Budapest, Hungary, works as a media artist. He started out by creating cartoon films (1968–83), whilst working as a painter, illustrator and photographer. He began working with computers in 1983.[1] He was artist-in-residence at the Zentrum für Kunst und Medientechnologie (ZKM) in 1992, and subsequently a member of the Institute's research staff (1993–1997) before taking up a guest professorship at the HBK Saar, Saarbrücken (1997–2002). IAMAS in Gifu, Japan, chose Waliczky as artist-in-residence for 1998/99. From 2003 until 2005 he was professor at IMG, Fachhochschule Mainz. From 2005 to 2010 he was at HBK Saar, this time as a full-time professor. As of 2010, he is a professor at the School of Creative Media at the City University of Hong Kong.
+        </p>
+        <div class="circulo">
+            <img src="img/tamas1.jpg">
+        </div>
+        <p>
+        His works have won numerous international awards, including the 1989 Golden Nica at the Prix Ars Electronica, Linz, and has been shown in several exhibitions worldwide, including the Lyon Biennale, the ICC Gallery Tokyo, and the Multimediale Karlsruhe.[1] His works are currently in several public collections, including the Centre Georges Pompidou, Paris or the Ludwig Museum, Budapest.
+        </p>
+         <p>
+        Tamás Waliczky, born in 1959, in Budapest, Hungary, works as a media artist. He started out by creating cartoon films (1968–83), whilst working as a painter, illustrator and photographer. He began working with computers in 1983.[1] He was artist-in-residence at the Zentrum für Kunst und Medientechnologie (ZKM) in 1992, and subsequently a member of the Institute's research staff (1993–1997) before taking up a guest professorship at the HBK Saar, Saarbrücken (1997–2002). IAMAS in Gifu, Japan, chose Waliczky as artist-in-residence for 1998/99. From 2003 until 2005 he was professor at IMG, Fachhochschule Mainz. From 2005 to 2010 he was at HBK Saar, this time as a full-time professor. As of 2010, he is a professor at the School of Creative Media at the City University of Hong Kong.</p>
+          <div class="hexagono">
+            <img src="img/tamas2.jpg">
+        </div>
+        <p>Tamas Waliczky (1959) was born in Budapest, Hungary. He is an animation and new media artist. He started out by creating animations at the age of nine. Then he worked as a painter, illustrator and photographer. He began working with computers in 1983. He was artist-in-residence at the ZKM Institute for Visual Media in 1992, and subsequently a member of the Institute’s research staff (1993-1997) before taking up a guest professorship at the HBK Saar, Saarbrucken (1997-2002). The IAMAS in Gifu, Japan, has chosen Waliczky as artist-in-residence in 1998-99. From 2003 until 2005 he is a professor at Fachhochschule Mainz. Between 2005 and 2010 he is at HBK Saar again, this time as full-time professor. Since September 2010 he is a professor at School of Creative Media, City University of Hong Kong.
+        Waliczky works together with his wife Anna Szepesi since the early eighties. Anna is usually the artistic adviser in most of his works.
+His works won numerous international awards, including the Golden Nica of Prix Ars Electronica, Linz, was shown in several exhibitions worldwide, including the Biennial of Lyon, the ICC Gallery Tokyo, the Multimediale Karlsruhe or the Biennial of Seville, and are in different public collections, like the Centre Georges Pompidou (Paris), the Kunstmuseum Bonn or the Ludwig Museum (Budapest). In 2019, Tamás Waliczky represents Hungary at the 58th Venice Biennale.
+        </p>
+ <p>
+        Tamás Waliczky, born in 1959, in Budapest, Hungary, works as a media artist. He started out by creating cartoon films (1968–83), whilst working as a painter, illustrator and photographer. He began working with computers in 1983.[1] He was artist-in-residence at the Zentrum für Kunst und Medientechnologie (ZKM) in 1992, and subsequently a member of the Institute's research staff (1993–1997) before taking up a guest professorship at the HBK Saar, Saarbrücken (1997–2002). IAMAS in Gifu, Japan, chose Waliczky as artist-in-residence for 1998/99. From 2003 until 2005 he was professor at IMG, Fachhochschule Mainz. From 2005 to 2010 he was at HBK Saar, this time as a full-time professor. As of 2010, he is a professor at the School of Creative Media at the City University of Hong Kong.
+        </p>
+    </div>
+    </article>
+</body>
+</html>
